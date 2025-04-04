@@ -17,7 +17,7 @@ from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as Params  # For par
 
 # Initialize Watsonx credentials with API key and service URL
 creds = Credentials(
-    api_key="HKmbXC6HOF49HXSLM8xaG4vWUgeaA1qzlFjtJuWIPtq5",  # My API key
+    api_key="",  # My API key
     url="https://eu-de.ml.cloud.ibm.com"  # IBM Cloud service URL
 )
 
@@ -25,7 +25,7 @@ creds = Credentials(
 watsonx_llm = ModelInference(
     model_id='meta-llama/llama-3-3-70b-instruct',  # Model identifier
     credentials=creds,  # Authentication credentials
-    project_id="14bbd387-6eb2-4a50-84f2-3a5bb9fafcb9",  # IBM Cloud project ID
+    project_id="",  # IBM Cloud project ID
     params={
         Params.DECODING_METHOD: 'sample',  # Text generation method
         Params.MAX_NEW_TOKENS: 200,  # Maximum length of generated response
